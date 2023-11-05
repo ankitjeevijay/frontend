@@ -4,6 +4,7 @@ import './App.css';
 import Home from './components/Home';
 import Footer from './components/layout/Footer';
 import Header from './components/layout/Header';
+import ProductDetail from './components/products/ProductDetail';
 
 
 function App() {
@@ -11,7 +12,8 @@ function App() {
     <>
       <Header />
       <Routes>
-        <Route path="/" element={<Home />} />
+        <Route Exact path="/" element={<Home />} />
+        <Route Exact path="/productdetail/:id" element={<ProductDetail/>} />
       </Routes>
       <Footer />
 
